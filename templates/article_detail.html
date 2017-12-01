@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block body%}
+    <h1>{{post.title}}</h1>
+    <h4>{{post.content}}</h4>
+
+    <a href =  "{% url 'core_index' %}">Back to Home</a>
+{% endblock %}
