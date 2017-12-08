@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block body%}
+{% include "tabs.html" %}
+    <table>
+        <tr>
+             <th>profile</th>
+             <th>profile2</th>
+        </tr>
+    </table>
+
+    <a href =  "{% url 'core_index' %}">Back to Home</a>
+{% endblock %}

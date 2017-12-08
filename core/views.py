@@ -13,3 +13,6 @@ def index(request):
 def article_detail(reqeust, pk):
     post = Post.objects.get(pk=pk)
     return render(reqeust, 'article_detail.html', dict(post=post))
+
+def profile(request):
+    return render(request, 'profile.html')
